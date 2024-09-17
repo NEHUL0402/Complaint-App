@@ -5,193 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-a:hover{
-  color: #df0812;
-}
-body {
-  background-color:rgb(235, 243, 245);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+  }
 
-.container {
-  background-color: rgb(170, 215, 217);
-  border:3px solid rgb(8, 8, 8);
-  line-height:60px;
-  width: 480px;
-  height: 550px;
-  position: absolute;
-  margin: auto;
-  top: 60px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  border-radius: 10px;
-  box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.5);
-}
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    animation: slideInFromLeft ease 1s;
+    -webkit-animation: slideInFromLeft ease 1s;
+    -moz-animation: slideInFromLeft ease 1s;
+    -o-animation: slideInFromLeft ease 1s;
+    -ms-animation: slideInFromLeft ease 1s;
+  }
 
-.content {
-  width: 56%;
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  text-align: center;
-}
- 
-.img1{
-  width: 120px;
-  position: relative;
-  top: 20px;
- border-radius: 60%;
-}
+  .content {
+    text-align: center;
+  }
 
-.header {
-  font-size: 35px;
-  font-weight: 700;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  line-height: 35px;
-}
+  .img1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+  }
 
-.detail {
-  width: 100%;
-  height: 48px;
-  margin: 5px;
-  padding: 15px;
-  font-size: 15px;
-  color: rgb(182, 195, 195);
-  border: 2px solid rgb(218, 214, 214);
-  border-radius: 15px;
-}
+  .header {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0056b3;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
 
-.detail:focus {
-  box-shadow: 0px -7px 3px -2px rgba(15, 91, 231, 0.4),
-    0px 7px 3px -2px rgba(15, 91, 231, 0.4),
-    7px 0px 3px -2px rgba(15, 91, 231, 0.4),
-    -7px 0px 3px -2px rgba(15, 91, 231, 0.4);
-  outline: none;
-}
+  .detail {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+  }
 
-h4 {
-  font-size: 13px;
-  font-weight: 700;
-  position: relative;
-  left: -60px;
-  margin: 5px;
-}
+  .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
 
+  .btn:hover {
+    background-color: #003366;
+  }
 
-.btn {
-  width: 100%;
-  height: 40px;
-  border: hidden;
-  border-radius: 20px;
-  font-size: 18px;
-  margin: 5px 0px;
-}
-
-
-.int {
-  background-color: #101011;
-  border:2px solid black;
-  margin: 10px 0px;
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-
-.int:hover{
-  background-color: #5f6062;
-}
-
-
-.or {
-  font-size: 15px;
-  font-weight: 700;
-  margin: 10px 0px;
-}
-
-
-.fbk {
-  background-color: rgb(24, 25, 26);
-  margin: 5px 0px;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-
-.fbk a {
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
-.fbk:hover{
-  background-color: rgb(8, 110, 206);
-}
-
-.ggl{
-  text-align: center;
-  background-color: #ccc;
-}
-
-.ggl a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-.ggl:hover{
-  background-color: #a0a0a0;
-}
-
-footer p {
-  font-size: 12px;
-  margin: 10px;
-  opacity: 0.7;
-}
-
-p:last-child {
-  opacity: 1;
-}
-.error{
-  font-size: x-large;
-  color: #4081eb;
-}
-
-hr {
-  width: 50%;
-  opacity: 0.4;
-  margin-left: 25%;
-}
-
-.upbtn{
-  position: relative;
-  top: 50px;
-  left: 140px;
-  font-size: 16px;
-  font-weight: 700;
-  text-align: center;
-  width: 126px;
-  padding: 11px 0px;
-  background-color: rgb(16, 15, 15);
- 
-  border-radius: 20px;
-}
-
+  .error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: capitalize;
+  }
+  label {
+    font-size: 16px;
+    font-weight: 1000;
+    color: #333;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+    width: 100%;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @keyframes slideInFromLeft {
+    0% {left: -100%;}
+    100% {left: 0%;}
+  }
   </style>
 </head>
 <body>
@@ -203,9 +119,12 @@ hr {
       
     
 <form action="/studentlogin" method="post">
-      <input type="text" placeholder="registration Number" name="registerationNumber" class="detail"  value="<%= locals.name %>" /><br />
-      <input type="text" placeholder="email" name="email" class="detail"  value="<%= locals.name %>" /><br />
-     <input type="password" placeholder="Password" name="password" class="detail" />
+      <label for="registerationNumber">Registration Number:</label>
+      <input type="text" id="registerationNumber" placeholder="Registration Number" name="registerationNumber" class="detail"  value="<%= locals.name %>" /><br />
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="Email" name="email" class="detail"  value="<%= locals.name %>" /><br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Password" name="password" class="detail" />
   
      <h4><a href="forgetpasswordmailpage">Forgot your password?</a></h4>
 
@@ -214,7 +133,5 @@ hr {
     </form>
     </div>
   </div>
-  
-
 </body>
 </html>

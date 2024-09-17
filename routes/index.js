@@ -21,7 +21,7 @@ function isloggedin(req, res, next) {
 // Profile page student
 router.get("/studentprofile", async (req, res) => {
   // Retrieve data from session
-  res.render('studentprofile', { check });
+  res.render('studentprofilepage', { check });
 });
 
 

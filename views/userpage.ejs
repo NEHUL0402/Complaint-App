@@ -7,42 +7,76 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
-    /* Custom CSS */
     body {
-      background-color:rgb(146, 199, 207);
+      font-family: 'Lato', sans-serif; /* Changed font family to Lato for a more modern look */
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 30px;
+      font-weight: bold; /* Added font-weight for emphasis */
     }
     .image-box {
-      border: 1px solid #ccc;
+      background-color: #fff;
+      border-radius: 10px;
       padding: 20px;
       margin-bottom: 20px;
-      transition: all 0.3s ease;
-      border-radius: 10px;
-      background-color:rgb(134, 163, 152);
-      border:2px solid black;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
     }
     .image-box:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px rgb(18, 17, 17);
-      text-decoration: none;
+      transform: translateY(-5px);
     }
     .image-box h2 {
-      color: #27585a;
-      margin-bottom: 20px;
+      color: #3498db;
+      margin-bottom: 15px;
+      font-weight: bold; /* Added font-weight for emphasis */
     }
-    
     .image-box img {
-      
-     
-      border-radius: 5px;
+      border-radius: 50%;
+      border: 3px solid #3498db;
+      transition: transform 0.3s ease;
     }
-a{
-  text-decoration: none;
-}
+    .image-box:hover img {
+      transform: scale(1.1);
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    footer p {
+      margin: 0;
+      text-align: center;
+      font-family: 'Arial', sans-serif; /* Changed font family to Arial for a clean look */
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+      .image-box {
+        margin-bottom: 15px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1 class="text-center mt-5">Welcome to the Vit Complaint Connect</h1>
+    <p class="text-center">Connect with us to resolve your complaints and provide feedback. We are here to help you!</p>
     
     <!-- Student Image Box -->
     <div class="row">
